@@ -27,7 +27,7 @@ proc EXTN_rtv_mom_cp_part_attr { sw } {
 
     1 {
 
-   #MOM_output_literal "(EXTN_rtv_mom_cp_part_attr 2)"
+     #MOM_output_literal "(EXTN_rtv_mom_cp_part_attr 2)"
 
      # "3DCOMP"
      global mom_contact_normal
@@ -64,7 +64,8 @@ proc EXTN_rtv_mom_cp_part_attr { sw } {
     2 {
      #MOM_output_literal "(EXTN_rtv_mom_cp_part_attr 3)"
 
-   # "POLYFORM" ?
+     # "POLYFORM" ?
+
      global mom_pos
      global mom_poly_ang
      global mom_poly_dlina
@@ -100,17 +101,17 @@ proc EXTN_rtv_mom_cp_part_attr { sw } {
      global mom_kin_retract_distance
      global mom_kin_reengage_distance
 
-     # Введите значения отвода и врезания инструмента
-     # задание :Отвод (мм)=
+     # Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёСЏ РѕС‚РІРѕРґР° Рё РІСЂРµР·Р°РЅРёСЏ РёРЅСЃС‚СЂСѓРјРµРЅС‚Р°
+     # Р·Р°РґР°РЅРёРµ :РћС‚РІРѕРґ (РјРј)=
      set mom_kin_retract_distance 100.0
 
-     # задание :Врезание (мм)=
+     # Р·Р°РґР°РЅРёРµ :Р’СЂРµР·Р°РЅРёРµ (РјРј)=
      set mom_kin_reengage_distance 100.0
     }
 
     4 {
      # INPUT_RETRACT_DIST
-     #uc1601(":Ввод дистанций отвода и врезания:", 0);
+     #uc1601(":Р’РІРѕРґ РґРёСЃС‚Р°РЅС†РёР№ РѕС‚РІРѕРґР° Рё РІСЂРµР·Р°РЅРёСЏ:", 0);
 
      global mom_prev_mcs_goto
      global mom_prev_tool_axis
@@ -125,7 +126,7 @@ proc EXTN_rtv_mom_cp_part_attr { sw } {
 
     5 {
 
-   #MOM_output_literal "(EXTN_rtv_mom_cp_part_attr 6)"
+     #MOM_output_literal "(EXTN_rtv_mom_cp_part_attr 6)"
 
      # "G43_MOVE" ?
      global mom_out_angle_pos
